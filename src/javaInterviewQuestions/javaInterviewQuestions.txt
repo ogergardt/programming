@@ -1,0 +1,42 @@
+1) How to reverse a string in java? 
+2) How to create a pyramid of numbers in java? 
+3) How do you remove all white spaces from a string in java? 
+4) How to find duplicate characters in a string in java? 
+5) How do you check the equality of two arrays in java? 
+6) Anagram program in java 
+7) Armstrong number program in java 
+8) How to find duplicate elements in an array? 
+9) How to find sum of all digits of a number in java? 
+10) How to find second largest number in an integer array? 
+11) How to perform matrix operations in java? 
+12) How to count occurrences of each character in a string in java? 
+13) How to find largest number less than a given number and without a given digit? 
+14) How to find all pairs of elements in an array whose sum is equal to given number? 
+15) How to find continuous sub array whose sum is equal to given number? 
+16) How to remove duplicate elements from ArrayList in java? 
+17) How to check whether given number is binary or not? 
+18) How to check whether one string is a rotation of another in java? 
+19) How to find intersection of two arrays in java? 
+20) How to check whether user input is number or not in java? 
+21) How to find trigonometric values of an angle in java? 
+22) How to reverse each word of a string in java? 
+23) How to separate zeros from non-zeros in an array? 
+24) Decimal To Binary, Decimal To Octal And Decimal To HexaDecimal In Java 
+25) How to find all the leaders in an integer array in java? 
+26) Reverse and add until you get a palindrome 
+27) Selection sort in java 
+28) Reverse the string with preserving the position of spaces 
+29) Roman equivalent of a decimal number 
+30) percentage of uppercase, lowercase, digits and special characters in a string 
+31) Launch external applications through java code 
+32) Find missing number in an array 
+33) String immutable program 
+34) Arrays.deepToString() method example. 
+35) 18 Java ArrayList Programming Examples. 
+36) 16 Java LinkedList Programming Examples. 
+37) Detection of deadlocked threads 
+38) Generate random numbers 
+39) Java PriorityQueue Example. 
+40) Java HashSet Example. 
+41) Java LinkedHashSet Example. 
+42) Java TreeSet Example. 
