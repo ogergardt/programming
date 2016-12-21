@@ -73,7 +73,5 @@ public class q2i1<T> {
 		list.printList();
 
 	}
-	
-	
 
 }
