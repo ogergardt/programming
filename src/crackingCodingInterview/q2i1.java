@@ -8,22 +8,11 @@ public class q2i1<T> {
 	
 	public void add(T item){
 		Node<T> newNode = new Node<T>(item);
-		newNode.prev= last;
 		if(last!=null) last.next=newNode;
 		last=newNode;
 		if(first==null) first=newNode;
 	}
 
-	
-	
-	public void unlink(Node<T> node){
-		if(node.prev!=null)
-		node.prev.next = node.next;
-		if(node.next!=null)
-		node.next.prev=node.prev;
-		
-	}
-	
 	public void printList(){
 		Node<T> current = this.first;
 		while(current!=null){
@@ -34,11 +23,14 @@ public class q2i1<T> {
 	
 	public void deleteDups(){
 		Node<T> current = this.first;
+		Node<T> runner = this.first;
 		while(current!=null){
-			Node<T> runner = this.first;
-			while(runner!=null){
-				if((current!=runner) && (current.item.equals(runner.item)))	unlink(runner);
-				runner=runner.next;
+			runner=current;
+			while(runner.next!=null){
+				if(current.item.equals(runner.next.item))
+					runner.next=runner.next.next; //unlink
+				else
+				runner=runner.next; 
 			}
 			current = current.next;
 		}
@@ -47,7 +39,6 @@ public class q2i1<T> {
 	private static class Node<T>{
 		T item;
 		Node<T> next;
-		Node<T> prev;
 		
 		Node(T item){
 			this.item=item;
@@ -70,7 +61,6 @@ public class q2i1<T> {
 		list.deleteDups();
 		
 		System.out.println("+++++++++");
-		list.printList();
 
 	}
 
