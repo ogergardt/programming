@@ -8,8 +8,10 @@ public class QuickSort {
 		for(int i =0; i<arr.length; i++){
 			arr[i] = (int) (Math.random()*100); 
 		}
+		System.out.println("unsorted array:");
 		printArray(arr);
 		
+		System.out.println("sorted array ASC:");
 		sort(arr, 0, arr.length-1);
 		printArray(arr);
 		
