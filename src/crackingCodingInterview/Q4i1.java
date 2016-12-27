@@ -15,14 +15,6 @@ public class Q4i1 {
 
 		// Describe a graph
 
-		/*
-		 * Map<Integer, List<Integer>> adjacencyList = new HashMap<Integer,
-		 * List<Integer>>(); adjacencyList.put(1, Arrays.asList(2,3,4));
-		 * adjacencyList.put(2, Arrays.asList(5,6)); adjacencyList.put(3,
-		 * Arrays.asList(7)); adjacencyList.put(4, Arrays.asList(8,9));
-		 * adjacencyList.put(5, Arrays.asList(10)); adjacencyList.put(7,
-		 * Arrays.asList(11,12));
-		 */
 		Graph graph = new Graph();
 		for (int i : new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 }) {
 			graph.nodes.add(new Node(i));
