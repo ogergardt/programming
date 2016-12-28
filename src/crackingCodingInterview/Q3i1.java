@@ -62,7 +62,6 @@ public class Q3i1 {
 		}
 		System.out.println("=================");
 		for(int i = 0; i<num; i++){
-			//System.out.println("stack #"+i);	
 			System.out.println("Pop from stack #"+i+" return a value: "+stack.pop(i));
 			System.out.println("Pop from stack #"+i+" return a value: "+stack.pop(i));
 			System.out.println("Pop from stack #"+i+" return a value: "+stack.pop(i));
