@@ -6,12 +6,10 @@ public class Q3i1 {
 	
 	//Describe how you could use a single array to implement three stacks
 	private static class FixedMultiStack<T>{
-		private int numberOfStacks;
 		private int capacity;
 		private T[] values;
 		private int[] cursors; 
 		public FixedMultiStack(Class<T> clazz, int numberOfStacks, int capacity){
-			this.numberOfStacks=numberOfStacks;
 			this.capacity=capacity;
 			this.values = (T[]) Array.newInstance(clazz, numberOfStacks*capacity);
 			this.cursors = new int[numberOfStacks]; //default 0
