@@ -12,8 +12,10 @@ public class MergeSort {
 	}
 	
 	private void mergeSort(int[] arr, int[] helpArr, int low, int hight){
+		System.out.format("\n\tlow=%d hight=%d\n",low,hight);
 		if(low<hight){
-			int middle = low+(hight-low)/2;
+			int middle = low+(hight-low)/2;	
+			System.out.format("\nlow=%d middle=%d hight=%d\n",low,middle,hight);
 			mergeSort(arr, helpArr, low, middle);
 			mergeSort(arr, helpArr, middle+1, hight);
 			merge(arr, helpArr, low, middle, hight);
@@ -41,11 +43,13 @@ public class MergeSort {
 			current++;
 		}
 		
-		//copy the rest of left half to arr
-		int remaining = middle - helpLeft;
-		for(int i=0; i<=remaining; i++){
-			arr[current+i] = helpArr[helpLeft+i]; 
-		}
+		if (helpLeft<=middle)
+			for(int i=0; i<=middle-helpLeft;i++)
+				arr[current+i]=helpArr[helpLeft+i];
+		else 
+		if(helpRight<=hight)   
+			for(int i=0; i<=hight-helpRight;i++)
+				arr[current+i]=helpArr[helpRight+i];
 		
 	}
 		
