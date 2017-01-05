@@ -40,8 +40,6 @@ public class Q4i2 {
 		printTree(root.left);
 		printTree(root.right);
 		
-		
-		
 	}
 	
 	
