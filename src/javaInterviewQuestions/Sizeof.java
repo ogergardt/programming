@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Sizeof
 {
 	//Do you know your data size?
+	//http://www.javaworld.com/article/2077496/testing-debugging/java-tip-130--do-you-know-your-data-size-.html
 	
     public static void main (String [] args) throws Exception
     {
