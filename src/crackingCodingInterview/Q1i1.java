@@ -13,7 +13,7 @@ public class Q1i1 {
 	}
 	
 	private static boolean isUnique(String str){
-		
+		//This solution work for any characters of ASCII table
 		if(str.length()>256) return false;
 		
 		boolean[] arr =new boolean[256];
@@ -29,4 +29,21 @@ public class Q1i1 {
 		return true;
 	}
 
+	private static boolean isUnique2(String str){
+		//This solution work if we limit characters with UPPERCASE or LOWERCASE 
+		//because type int have size 32bit
+		int checker = 0;
+		
+		for(int i=0; i<str.length();i++){
+			int val = str.charAt(i)-'a';
+			if((checker & (1 << val))>0) 
+				return false;
+			else
+				checker |=(1<<val);
+		}
+		
+		return true;
+	}
+
+	
 }
