@@ -1,6 +1,7 @@
 package javaInterviewQuestions;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class Sizeof
 {
@@ -25,8 +26,14 @@ public class Sizeof
             // Instantiate your data here and assign it to object
             
             //object = new Object ();
-            object = new ArrayList<String> ();
-            ((ArrayList<String>)object).add("");
+            object = (new String("Mr John Smith"));
+            //object = new Stack<String>();
+            //object = new Integer(1);
+            //object = new String();
+            
+            //object = new ArrayList<String> ();
+            //((ArrayList<String>)object).add("");
+            
             //object = new Integer (i);
             //object = new Long (i);
             //object = new String ();
