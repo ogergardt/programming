@@ -28,6 +28,10 @@ public class Q10i1 {
 				a[i]=i;
 			}
 			
+			for(int i : b){
+				System.out.format("%d ", i);
+			}
+			System.out.println();
 			for(int i : a){
 				System.out.format("%d ", i);
 			}
