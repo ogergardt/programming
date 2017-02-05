@@ -34,6 +34,9 @@ public class MergeKSortedArrays {
 	}
 	
 	public static void main(String[] args){
+		
+		//The time is O(nlog(n))
+		
 		//describe test data
 		//arrays able to have any size
 		int[] arr1 = {1,2,5,6,22};
