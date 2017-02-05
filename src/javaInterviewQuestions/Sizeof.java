@@ -26,10 +26,10 @@ public class Sizeof
             // Instantiate your data here and assign it to object
             
             //object = new Object ();
-            object = (new String("Mr John Smith"));
+            //object = (new String("Mr John Smith"));
             //object = new Stack<String>();
             //object = new Integer(1);
-            //object = new String();
+            object = new String();
             
             //object = new ArrayList<String> ();
             //((ArrayList<String>)object).add("");
