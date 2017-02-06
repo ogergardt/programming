@@ -35,6 +35,10 @@ public class MergeKLinkedLists {
 	}
 	
 	public static void main(String[] args){
+		
+		//Time: log(k) * n.
+		//k is number of list and n is number of total elements.
+		
 		//preparing data for test
 		Node l1Head = new Node(0);
 		Node l1 = l1Head;
