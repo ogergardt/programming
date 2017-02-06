@@ -12,7 +12,10 @@ import java.util.Set;
 
 public class Q4i1 {
 	public static void main(String... arg) {
-
+		
+		//Given a directed graph, design an algorithm  to find out whether there is a route between two nodes.
+		//p241, p.109
+		
 		// Describe a graph
 
 		Graph graph = new Graph();
