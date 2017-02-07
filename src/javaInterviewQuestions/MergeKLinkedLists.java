@@ -7,6 +7,8 @@ public class MergeKLinkedLists {
 	
 	
 	private static Node merge(Node[] headNodes){
+	    if(headNodes==null||headNodes.length==0)
+	        return null;
 		
 		PriorityQueue<Node> queue = new PriorityQueue<Node>(new Comparator<Node>(){
 	        public int compare(Node l1, Node l2){
