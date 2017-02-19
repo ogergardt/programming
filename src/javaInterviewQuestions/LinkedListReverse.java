@@ -9,40 +9,38 @@ public class LinkedListReverse {
 	static class Node {
 		int data;
 		Node next;
-	}
-	
-	public static void main(String[] args){
-		Node node1 = new Node();
-		node1.data = 1;
-		Node node2 = new Node();
-		node2.data = 2;
-		Node node3 = new Node();
-		node3.data = 3;
-		node1.next=node2;
-		node2.next=node3;
-		
-		//print(node1);
-		print(reverse(node1));
-	
-	}
-	
-	static Node reverse(Node curr){
-		Node next = null;
-		Node prev = null;
-		while(curr!=null){
-			next=curr.next;
-			curr.next=prev;
-			prev=curr;
-			curr=next;
-		}
-		return prev;
-	}
-	
-	static void print(Node current){
-		while(current!=null){
-			System.out.println(current.data);
-			current=current.next;
+
+		public Node(int data) {
+			this.data = data;
 		}
 	}
 
+	public static void main(String[] args) {
+
+		Node node = new Node(1);
+		node.next = new Node(2);
+		node.next.next = new Node(3);
+
+		//print(node);
+		print(reverse(node));
+
+	}
+
+	static Node reverse(Node node) {
+		Node prev = null;
+		while (node != null) {
+			Node next = node.next;
+			node.next = prev;
+			prev = node;
+			node = next;
+		}
+		return prev;
+	}
+
+	static void print(Node node) {
+		while (node != null) {
+			System.out.println(node.data);
+			node = node.next;
+		}
+	}
 }
