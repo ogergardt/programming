@@ -1,5 +1,7 @@
 package crackingCodingInterview;
 
+import java.util.Arrays;
+
 public class MergeSort {
 	
 	//Implementation of Merge Sort. RuntimeO(n log(n)) average and worst case. Memory: Depends
@@ -12,10 +14,10 @@ public class MergeSort {
 	}
 	
 	private void mergeSort(int[] arr, int[] helpArr, int low, int hight){
-		System.out.format("\n\tlow=%d hight=%d\n",low,hight);
+		//System.out.format("\n\tlow=%d hight=%d\n",low,hight);
 		if(low<hight){
 			int middle = low+(hight-low)/2;	
-			System.out.format("\nlow=%d middle=%d hight=%d\n",low,middle,hight);
+			//System.out.format("\nlow=%d middle=%d hight=%d\n",low,middle,hight);
 			mergeSort(arr, helpArr, low, middle);
 			mergeSort(arr, helpArr, middle+1, hight);
 			merge(arr, helpArr, low, middle, hight);
@@ -23,9 +25,11 @@ public class MergeSort {
 	}
 	private void merge(int[] arr, int[] helpArr, int low, int middle, int hight){
 		//copy both halves to helpArr
-		for(int i=0; i<=hight; i++){
+		for(int i=low; i<=hight; i++){
 			helpArr[i]=arr[i];
+			//System.out.format("%d ",helpArr[i]);
 		}
+		//System.out.println();
 		
 		int helpLeft = low;
 		int helpRight = middle+1;
@@ -57,12 +61,11 @@ public class MergeSort {
 	
 	public static void main(String[] args){
 		int[] arr = {4,5,1,2,3};
-		for(int i : arr) System.out.print(i+" ");
+		System.out.println(Arrays.toString(arr));
 	
 		MergeSort sort = new MergeSort();
 		sort.mergeSort(arr);
-		System.out.println();
-		for(int i : arr) System.out.print(i+" ");
+		System.out.println(Arrays.toString(arr));
 
 	}
 }
