@@ -6,6 +6,7 @@ import java.util.HashMap;
 public class Basic2SumProblem {
 	
 	//Basic 2 sum problem. Finding pair of numbers that add to   current sum.
+	//Each item of array can be used at most once.
 	
 	public static void main(String[] args) {
 
